@@ -1,5 +1,6 @@
 ---
 import GlobalStyles from "../components/GlobalStyles.astro";
+import Analytics from '@vercel/analytics/astro';
 ---
 
 <!doctype html>
@@ -27,5 +28,6 @@ import GlobalStyles from "../components/GlobalStyles.astro";
       <slot />
     </main>
     <GlobalStyles />
+    <Analytics />
 	</body>
 </html>
