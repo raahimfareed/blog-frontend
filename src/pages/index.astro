@@ -1,14 +1,59 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import WideCard from '../components/WideCard.astro';
+import Card from '../components/Card.astro';
+import '@fontsource-variable/gabarito';
+import { Search } from "lucide-solid";
 ---
 
 <Layout>
   <header class="w-full p-8">
-    <div class="rounded-xl w-full flex items-center justify-center py-32 bg-gradient-to-tr from-sky-300 via-cyan-300 to-teal-300">
+    <div class="rounded-xl w-full flex flex-col gap-4 items-center justify-center py-24 bg-gradient-to-tr from-sky-300 via-cyan-300 to-teal-300">
       <h1 class="text-4xl font-bold text-white">Raahim's Blog</h1>
     </div>
   </header>
+  <section class="p-8 -translate-y-24 flex flex-col gap-16 -mb-16 items-center justify-center">
+    <div class="flex items-center relative w-1/2">
+      <Search class="absolute left-4 text-gray-400" />
+      <input type="text" class="rounded-md p-4 !pl-12 shadow-xl w-full" placeholder="Search" />
+    </div>
+    <div class="flex gap-4 max-w-[80%] flex-wrap items-center justify-center">
+      <button class="bg-white px-4 py-2 min-w-32 rounded-full hover:bg-blue-500 hover:text-gray-50 transition">All</button>
+      <button class="bg-white px-4 py-2 min-w-32 rounded-full hover:bg-blue-500 hover:text-gray-50 transition">Web</button>
+      <button class="bg-white px-4 py-2 min-w-32 rounded-full hover:bg-blue-500 hover:text-gray-50 transition">Blockchain</button>
+      <button class="bg-white px-4 py-2 min-w-32 rounded-full hover:bg-blue-500 hover:text-gray-50 transition">Linux</button>
+    </div>
+  </section>
+  <section class="p-8">
+    <WideCard
+      tag="Technology" 
+      author="Raahim Fareed" 
+      title="Intel names two chip industry veterans to its board amid CEO search" 
+      body="Intel on Thursday named two chip industry veterans to its board, as the struggling semiconductor firm looks for a new top boss following the recent ouster of Pat Gelsinger and tries to reclaim its lost glory. The chipmaker said Eric Meurice, former CEO of chipmaking equipment provider ASML, and Steve Sanghi, interim CEO of Microchip Technology, are the new additions to its board. Both Meurice and Sanghi have previously worked at Intel. Intel has struggled to keep up with advanced chipmaking, falling well behind rivals such as Nvidia in designing chips that power AI and TSMC in making smaller and more efficient semiconductors. Gelsinger, whose removal as CEO was announced on Monday, was tasked to restore Intel's lead in chipmaking, but his costly bet on contract manufacturing has seen the company shrink to a market value more than 30 times smaller than Nvidia. Intel has started evaluating a handful of outsiders, including former board member Lip-Bu Tan, for the role of CEO, Reuters reported on Tuesday. The company's next CEO will have manufacturing expertise as well as experience in the product side of the business, interim co-CEO and CFO David Zinsner said earlier this week. Meurice led ASML from 2004 to 2013 and previously held roles at Thomson S.A, Dell, and ITT Semiconductors. He worked at Intel between 1984 and 1989." 
+      publishDate="2024 08 16"
+    />
+  </section>
+  <section class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+    <Card
+      tag="Technology" 
+      author="Raahim Fareed" 
+      title="Intel names two chip industry veterans to its board amid CEO search" 
+      body="Intel on Thursday named two chip industry veterans to its board, as the struggling semiconductor firm looks for a new top boss following the recent ouster of Pat Gelsinger and tries to reclaim its lost glory. The chipmaker said Eric Meurice, former CEO of chipmaking equipment provider ASML, and Steve Sanghi, interim CEO of Microchip Technology, are the new additions to its board. Both Meurice and Sanghi have previously worked at Intel. Intel has struggled to keep up with advanced chipmaking, falling well behind rivals such as Nvidia in designing chips that power AI and TSMC in making smaller and more efficient semiconductors. Gelsinger, whose removal as CEO was announced on Monday, was tasked to restore Intel's lead in chipmaking, but his costly bet on contract manufacturing has seen the company shrink to a market value more than 30 times smaller than Nvidia. Intel has started evaluating a handful of outsiders, including former board member Lip-Bu Tan, for the role of CEO, Reuters reported on Tuesday. The company's next CEO will have manufacturing expertise as well as experience in the product side of the business, interim co-CEO and CFO David Zinsner said earlier this week. Meurice led ASML from 2004 to 2013 and previously held roles at Thomson S.A, Dell, and ITT Semiconductors. He worked at Intel between 1984 and 1989." 
+      publishDate="2024 08 16"
+    />
+    <Card
+      tag="Technology" 
+      author="Raahim Fareed" 
+      title="Intel names two chip industry veterans to its board amid CEO search" 
+      body="Intel on Thursday named two chip industry veterans to its board, as the struggling semiconductor firm looks for a new top boss following the recent ouster of Pat Gelsinger and tries to reclaim its lost glory. The chipmaker said Eric Meurice, former CEO of chipmaking equipment provider ASML, and Steve Sanghi, interim CEO of Microchip Technology, are the new additions to its board. Both Meurice and Sanghi have previously worked at Intel. Intel has struggled to keep up with advanced chipmaking, falling well behind rivals such as Nvidia in designing chips that power AI and TSMC in making smaller and more efficient semiconductors. Gelsinger, whose removal as CEO was announced on Monday, was tasked to restore Intel's lead in chipmaking, but his costly bet on contract manufacturing has seen the company shrink to a market value more than 30 times smaller than Nvidia. Intel has started evaluating a handful of outsiders, including former board member Lip-Bu Tan, for the role of CEO, Reuters reported on Tuesday. The company's next CEO will have manufacturing expertise as well as experience in the product side of the business, interim co-CEO and CFO David Zinsner said earlier this week. Meurice led ASML from 2004 to 2013 and previously held roles at Thomson S.A, Dell, and ITT Semiconductors. He worked at Intel between 1984 and 1989." 
+      publishDate="2024 08 16"
+    />
+    <Card
+      tag="Technology" 
+      author="Raahim Fareed" 
+      title="Intel names two chip industry veterans to its board amid CEO search" 
+      body="Intel on Thursday named two chip industry veterans to its board, as the struggling semiconductor firm looks for a new top boss following the recent ouster of Pat Gelsinger and tries to reclaim its lost glory. The chipmaker said Eric Meurice, former CEO of chipmaking equipment provider ASML, and Steve Sanghi, interim CEO of Microchip Technology, are the new additions to its board. Both Meurice and Sanghi have previously worked at Intel. Intel has struggled to keep up with advanced chipmaking, falling well behind rivals such as Nvidia in designing chips that power AI and TSMC in making smaller and more efficient semiconductors. Gelsinger, whose removal as CEO was announced on Monday, was tasked to restore Intel's lead in chipmaking, but his costly bet on contract manufacturing has seen the company shrink to a market value more than 30 times smaller than Nvidia. Intel has started evaluating a handful of outsiders, including former board member Lip-Bu Tan, for the role of CEO, Reuters reported on Tuesday. The company's next CEO will have manufacturing expertise as well as experience in the product side of the business, interim co-CEO and CFO David Zinsner said earlier this week. Meurice led ASML from 2004 to 2013 and previously held roles at Thomson S.A, Dell, and ITT Semiconductors. He worked at Intel between 1984 and 1989." 
+      publishDate="2024 08 16"
+    />
+  </section>
 </Layout>

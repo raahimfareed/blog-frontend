@@ -6,7 +6,7 @@ export default {
 	theme: {
     extend: {
       fontFamily: {
-        sans: ['Syne', ...defaultTheme.fontFamily.sans]
+        sans: ['Gabarito Variable', ...defaultTheme.fontFamily.sans]
       }
     },
 	},
